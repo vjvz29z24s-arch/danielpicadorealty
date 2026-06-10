@@ -1,275 +1,385 @@
+Yes — delete everything in index.html and paste this full code.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Daniel Picado | DSP Realty Group | Century 21 Cornerstone</title>
-
-<meta name="description" content="Daniel Picado - Century 21 Cornerstone Realtor serving Orange County, Los Angeles County, Riverside County and San Bernardino County. Buy, sell, invest and home valuation services.">
-
+<title>Daniel Picado | Southern California Realtor | DSP Realty Group</title>
+<meta name="description" content="Daniel Picado, REALTOR® with DSP Realty Group and Century 21 Cornerstone. Serving Orange County, Los Angeles County, Riverside County, and San Bernardino County.">
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
-
+html{
+scroll-behavior:smooth;
+}
 body{
-background:#f7f7f7;
-color:#333;
-line-height:1.6;
-}
-
-.hero{
-background:#111827;
+background:#050505;
 color:white;
-padding:80px 20px;
-text-align:center;
 }
-
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-.hero h2{
-font-size:22px;
-font-weight:300;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:18px;
-}
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:15px 30px;
-background:#d4af37;
-color:black;
+a{
 text-decoration:none;
-font-weight:bold;
-border-radius:8px;
 }
-
-.section{
-padding:70px 20px;
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.90)),
+url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+align-items:center;
+padding:40px 25px;
+}
+.hero-inner{
 max-width:1200px;
 margin:auto;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:55px;
+align-items:center;
 }
-
-.section-title{
+.headshot{
+width:100%;
+max-width:420px;
+border-radius:8px;
+box-shadow:0 30px 80px rgba(0,0,0,.75);
+background:white;
+}
+.logo{
+font-size:16px;
+letter-spacing:4px;
+font-weight:bold;
+color:#d4af37;
+margin-bottom:35px;
+}
+h1{
+font-size:74px;
+line-height:.95;
+letter-spacing:-3px;
+margin-bottom:25px;
+}
+.gold{
+color:#d4af37;
+}
+.hero p{
+font-size:20px;
+line-height:1.6;
+color:#e8e8e8;
+max-width:700px;
+}
+.buttons{
+margin-top:35px;
+}
+.btn{
+display:inline-block;
+background:#d4af37;
+color:#000;
+padding:16px 30px;
+font-weight:bold;
+margin:8px;
+border-radius:3px;
+letter-spacing:1px;
+}
+.btn-light{
+background:white;
+color:#000;
+}
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+background:#222;
+gap:1px;
+}
+.stat{
+background:#101010;
+padding:45px 20px;
 text-align:center;
-font-size:36px;
-margin-bottom:40px;
 }
-
-.cards{
+.stat h2{
+font-size:46px;
+color:#d4af37;
+}
+.stat p{
+color:#ccc;
+margin-top:8px;
+}
+.section{
+max-width:1200px;
+margin:auto;
+padding:90px 25px;
+}
+.section h2{
+font-size:52px;
+margin-bottom:35px;
+}
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
-
 .card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 2px 12px rgba(0,0,0,.08);
+background:#141414;
+border:1px solid #333;
+padding:35px;
+min-height:210px;
 }
-
 .card h3{
-margin-bottom:10px;
+font-size:26px;
+color:#d4af37;
+margin-bottom:15px;
 }
-
+.card p{
+color:#ccc;
+font-size:17px;
+line-height:1.6;
+}
 .about{
+background:#f4f1ea;
+color:#111;
+padding:90px 25px;
+}
+.about-inner{
+max-width:1100px;
+margin:auto;
 display:grid;
-grid-template-columns:1fr 2fr;
-gap:40px;
+grid-template-columns:1fr 1.6fr;
+gap:50px;
 align-items:center;
 }
-
 .about img{
 width:100%;
-max-width:300px;
-border-radius:20px;
+max-width:370px;
+border-radius:8px;
+box-shadow:0 20px 55px rgba(0,0,0,.25);
+background:white;
 }
-
-.contact{
-background:#111827;
-color:white;
+.about h2{
+font-size:54px;
+margin-bottom:25px;
+}
+.about p{
+font-size:19px;
+line-height:1.7;
+margin-bottom:18px;
+}
+.reviews{
+background:#0b0b0b;
 text-align:center;
-padding:60px 20px;
+padding:85px 25px;
 }
-
-.contact a{
-color:#d4af37;
-text-decoration:none;
+.reviews h2{
+font-size:48px;
+margin-bottom:15px;
 }
-
+.reviews p{
+font-size:20px;
+color:#ccc;
+margin-bottom:25px;
+}
+.lead{
+background:#090909;
+padding:90px 25px;
+text-align:center;
+}
+.lead h2{
+font-size:54px;
+margin-bottom:15px;
+}
+.lead p{
+color:#ccc;
+font-size:19px;
+margin-bottom:30px;
+}
+form{
+max-width:650px;
+margin:auto;
+}
+input,
+select{
+width:100%;
+padding:19px;
+margin:10px 0;
+font-size:18px;
+border:none;
+border-radius:2px;
+}
+button{
+width:100%;
+padding:19px;
+background:#d4af37;
+color:#000;
+border:none;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+letter-spacing:1px;
+}
 footer{
-background:black;
-color:white;
+background:#000;
+padding:35px 20px;
 text-align:center;
-padding:20px;
+color:#aaa;
+line-height:1.8;
 }
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:34px;
-}
-
-.about{
+@media(max-width:850px){
+.hero-inner{
 grid-template-columns:1fr;
 text-align:center;
 }
-
+h1{
+font-size:46px;
 }
-
+.hero p{
+margin:auto;
+}
+.headshot{
+max-width:310px;
+margin:auto;
+}
+.section h2,
+.about h2,
+.reviews h2,
+.lead h2{
+font-size:36px;
+}
+.about-inner{
+grid-template-columns:1fr;
+text-align:center;
+}
+}
 </style>
 </head>
-
 <body>
-
 <section class="hero">
-
-<h1>Daniel Picado</h1>
-
-<h2>DSP Realty Group | Century 21 Cornerstone</h2>
-
+<div class="hero-inner">
+<div>
+<img src="IMG_3184.jpg" alt="Daniel Picado Realtor" class="headshot">
+</div>
+<div>
+<div class="logo">DSP REALTY GROUP</div>
+<h1>SOUTHERN CALIFORNIA REAL ESTATE,<br><span class="gold">DONE RIGHT.</span></h1>
 <p>
-Helping buyers, sellers, and investors throughout Orange County,
-Los Angeles County, Riverside County, and San Bernardino County.
+Daniel Picado with Century 21 Cornerstone helps buyers, sellers, and investors make confident real estate decisions throughout Orange County, Los Angeles County, Riverside County, and San Bernardino County.
 </p>
-
-<br>
-
-<a class="btn" href="tel:5622986050">Call Now</a>
-
-<a class="btn" href="mailto:dpicadorealty@gmail.com">Email Me</a>
-
+<div class="buttons">
+<a class="btn" href="#leadform">GET STARTED</a>
+<a class="btn btn-light" href="https://www.zillow.com/profile/dsprealtygroup" target="_blank">ZILLOW REVIEWS</a>
+</div>
+</div>
+</div>
 </section>
-
+<section class="stats">
+<div class="stat">
+<h2>5.0</h2>
+<p>Zillow Rating</p>
+</div>
+<div class="stat">
+<h2>22</h2>
+<p>Zillow Reviews</p>
+</div>
+<div class="stat">
+<h2>63+</h2>
+<p>Homes Sold</p>
+</div>
+<div class="stat">
+<h2>4</h2>
+<p>Counties Served</p>
+</div>
+</section>
 <section class="section">
-
-<h2 class="section-title">Real Estate Services</h2>
-
-<div class="cards">
-
+<h2>Work With Daniel</h2>
+<div class="grid">
 <div class="card">
 <h3>Buy a Home</h3>
-<p>
-Expert guidance from start to finish to help you find the right home and negotiate the best deal.
-</p>
+<p>Get local guidance, smart strategy, and strong representation from search to closing.</p>
 </div>
-
 <div class="card">
 <h3>Sell Your Home</h3>
-<p>
-Professional marketing strategies designed to maximize exposure and achieve top dollar.
-</p>
+<p>Position your home with pricing, marketing, negotiation, and a clear plan from day one.</p>
 </div>
-
 <div class="card">
-<h3>Investments</h3>
-<p>
-Guidance on rental properties, flips, and long-term real estate investment opportunities.
-</p>
+<h3>Home Value</h3>
+<p>Request a local home value review and understand what your property may be worth in today’s market.</p>
 </div>
-
+<div class="card">
+<h3>Just Looking?</h3>
+<p>No pressure. Ask questions, compare options, and make the right move when you’re ready.</p>
 </div>
-
+</div>
 </section>
-
-<section class="section">
-
-<div class="about">
-
+<section class="about">
+<div class="about-inner">
 <div>
-<img src="https://via.placeholder.com/300x400?text=Daniel+Picado" alt="Daniel Picado">
+<img src="IMG_3184.jpg" alt="Daniel Picado">
 </div>
-
 <div>
-
-<h2>About Daniel</h2>
-
-<br>
-
+<h2>Meet Daniel Picado</h2>
 <p>
-Daniel Picado is a Realtor with Century 21 Cornerstone and founder of DSP Realty Group.
-His mission is to provide honest advice, strong communication, and exceptional service for every client.
+Daniel Picado is a Southern California REALTOR® with Century 21 Cornerstone and DSP Realty Group.
 </p>
-
-<br>
-
 <p>
-Whether you're buying your first home, upgrading, downsizing, or investing,
-Daniel works tirelessly to help you achieve your real estate goals.
+He helps clients throughout Orange County, Los Angeles County, Riverside County, and San Bernardino County with honest guidance, strong communication, and dedicated representation.
 </p>
-
+<p>
+Whether you are buying your first home, selling a property, relocating, or just exploring your options, Daniel’s goal is to make the process clear, strategic, and less stressful.
+</p>
+<p><strong>DRE #02026880</strong></p>
 </div>
-
 </div>
-
 </section>
-
+<section class="reviews">
+<h2>Trusted by Local Buyers & Sellers</h2>
+<p>⭐⭐⭐⭐⭐ Rated 5.0 on Zillow | 22 Zillow Reviews | 63+ Homes Sold</p>
+<a class="btn" href="https://www.zillow.com/profile/dsprealtygroup" target="_blank">READ MY ZILLOW REVIEWS</a>
+</section>
 <section class="section">
-
-<h2 class="section-title">Areas Served</h2>
-
-<div class="cards">
-
+<h2>Areas Served</h2>
+<div class="grid">
 <div class="card">
 <h3>Orange County</h3>
+<p>La Habra, Brea, Fullerton, Anaheim, and surrounding communities.</p>
 </div>
-
 <div class="card">
 <h3>Los Angeles County</h3>
+<p>Whittier, La Mirada, Los Angeles, and surrounding communities.</p>
 </div>
-
 <div class="card">
 <h3>Riverside County</h3>
+<p>Helping buyers and sellers throughout the Inland Empire.</p>
 </div>
-
 <div class="card">
 <h3>San Bernardino County</h3>
+<p>Residential real estate guidance across growing Southern California markets.</p>
 </div>
-
 </div>
-
 </section>
-
-<section class="contact">
-
-<h2>Let's Talk Real Estate</h2>
-
-<br>
-
-<p>
-Phone: (562) 298-6050
-</p>
-
-<p>
-Email: dpicadorealty@gmail.com
-</p>
-
-<br>
-
-<a href="tel:5622986050">Call Now</a>
-
+<section class="lead" id="leadform">
+<h2>Let’s Connect</h2>
+<p>Tell me what you’re looking to do and I’ll personally reach out.</p>
+<form action="https://formsubmit.co/dpicadorealty@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Website Lead - Daniel Picado Realty">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<select name="Interest" required>
+<option value="">What are you looking to do?</option>
+<option value="Buying a Home">Buying a Home</option>
+<option value="Selling a Home">Selling a Home</option>
+<option value="Buying and Selling">Buying and Selling</option>
+<option value="Just Looking">Just Looking</option>
+</select>
+<button type="submit">SEND MY INFORMATION</button>
+</form>
 </section>
-
 <footer>
-
-DSP Realty Group | Daniel Picado | DRE #02026880
-
+<p><strong>DSP Realty Group</strong></p>
+<p>Daniel Picado | Century 21 Cornerstone | DRE #02026880</p>
+<p>562-298-6050 | dpicadorealty@gmail.com</p>
 </footer>
-
 </body>
 </html>
+
+After you paste it, click Commit changes.

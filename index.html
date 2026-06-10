@@ -195,31 +195,41 @@ form{
 max-width:650px;
 margin:auto;
 }
-input,
-select{
+input{
 width:100%;
-height:64px;
-padding:19px;
-margin:10px 0;
-font-size:20px;
+height:75px;
+padding:20px;
+margin:12px 0;
+font-size:24px;
 border:none;
-border-radius:2px;
+border-radius:4px;
 }
-select{
-font-size:21px;
-font-weight:500;
+.big-select{
+width:100%;
+height:90px;
+padding:20px;
+margin:12px 0;
+font-size:28px;
+font-weight:700;
+border:none;
+border-radius:4px;
+background:#ffffff;
+color:#111111;
 cursor:pointer;
 }
 button{
 width:100%;
-padding:21px;
+height:80px;
+padding:20px;
 background:#d4af37;
-color:#000;
+color:#000000;
 border:none;
-font-size:21px;
+font-size:24px;
 font-weight:bold;
-cursor:pointer;
 letter-spacing:1px;
+cursor:pointer;
+margin-top:12px;
+border-radius:4px;
 }
 footer{
 background:#000;
@@ -252,6 +262,13 @@ font-size:36px;
 .about-inner{
 grid-template-columns:1fr;
 text-align:center;
+}
+.big-select{
+font-size:24px;
+height:85px;
+}
+input{
+font-size:22px;
 }
 }
 </style>
@@ -367,12 +384,16 @@ Whether you are buying your first home, selling a property, relocating, or just 
 <input type="hidden" name="_subject" value="New Website Lead - Daniel Picado Realty">
 <input type="hidden" name="_captcha" value="false">
 <input type="text" name="Name" placeholder="Your Name" required>
-<input type="email" name="Email" placeholder="Your Email" required>
-<select name="Interest" required>
-<option value="">Select an Option</option>
-<option value="Buying a Home">Buying a Home</option>
-<option value="Selling a Home">Selling a Home</option>
-<option value="Buying and Selling">Buying and Selling</option>
+<input type="tel" name="Phone" placeholder="Your Phone Number" required>
+<input type="email" name="Email" placeholder="Your Email Address" required>
+<select name="Interest" class="big-select" required>
+<option value="">What Are You Looking To Do?</option>
+<option value="Buy a Home">Buy a Home</option>
+<option value="Sell a Home">Sell a Home</option>
+<option value="Buy and Sell">Buy and Sell</option>
+<option value="Investment Property">Investment Property</option>
+<option value="Home Value Request">Home Value Request</option>
+<option value="First Time Buyer">First Time Buyer</option>
 <option value="Just Looking">Just Looking</option>
 </select>
 <button type="submit">SEND MY INFORMATION</button>
